@@ -15,8 +15,8 @@ function Search() {
 
   return (
     <form onSubmit={handleSearch}>
-      <input type="text" value={search} placeholder="Enter the Search term" onChange={(e) => setSearch(e.target.value)} />
-      <button type="submit" className='bg-blue-500 text-white font-bold py-2 px-4 rounded-lg'>
+      <input type="text" value={search} placeholder="Enter the Search term" onChange={(e) => setSearch(e.target.value)} className="border border-solid border-gray-300 rounded"/>
+      <button type="submit" className='bg-blue-500 text-xs text-white font-medium font-bold ml-2 py-2 px-4 rounded-lg'>
         Search
       </button>
     </form>
