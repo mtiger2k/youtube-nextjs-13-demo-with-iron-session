@@ -3,7 +3,7 @@ import React from "react";
 import { getRequestCookie } from "../../lib/getRequestCookie";
 
 async function AuthPage() {
-    const user = await getRequestCookie();
+    const user: any = await getRequestCookie();
 
     if (user)
         return (
